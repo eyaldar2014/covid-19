@@ -2,25 +2,25 @@
 
 **assignment :**
 
-- _ _"We want to build a covid 19 statistic webapp"_ _
+- _"We want to build a covid 19 statistic webapp"_
 
-- _ _"We want the ability for the user to choose statistics between continents"_ _
+- _"We want the ability for the user to choose statistics between continents"_
 
-- _ _"We want the ability for the user to choose statistics between countries"_ _
+- _"We want the ability for the user to choose statistics between countries"_
 
-- _ _"Make it look pretty"_ _
+- _"Make it look pretty"_
 
-- _ _"Tweak the performance"_ _
+- _"Tweak the performance"_
 
 <!-- __""__ -->
 -------------------------------------------------------------------------------
 
 **set up - 30 minutes**
+  - functioning terminal
+  - vscode files and folders
+  - links for api, read assignment briefly
+  - start planning document
   - git repository
-	- functioning terminal
-	- vscode files and folders
-	- links for api, read assignment briefly
-	- start planning document
 
 
 **planning - 30 minutes**
@@ -63,8 +63,7 @@
 	-  create api search functionality and display - 20 minutes
 
 
-**design**
-  - design time - 75 minutes
+**design - 75 minutes**
 	- created by me - 30 minutes
 	- add spinner - 15 minutes
 	- add normalise library - 30 minutes (first time)
