@@ -1,14 +1,19 @@
 # covid-19
 
 **assignment :**
-__"We want to build a covid 19 statistic webapp"__
-__"We want the ability for the user to choose statistics between continents"__
-__"We want the ability for the user to choose statistics between countries"__
-__"Make it look pretty"__
-__"Tweak the performance"__
-__""__
 
-**plan - covid 19 webapp**
+- _ _"We want to build a covid 19 statistic webapp"_ _
+
+- _ _"We want the ability for the user to choose statistics between continents"_ _
+
+- _ _"We want the ability for the user to choose statistics between countries"_ _
+
+- _ _"Make it look pretty"_ _
+
+- _ _"Tweak the performance"_ _
+
+<!-- __""__ -->
+-------------------------------------------------------------------------------
 
 **set up - 30 minutes**
   - git repository
@@ -69,4 +74,5 @@ __""__
   - planning - 20 minutes
 	- basic deploy in page - 20 minutes
 
-**__total net time - 545 minutes (9 hours) - basic full work__**
+-------------------------------------------------------------------------------
+**_ _total net time - 545 minutes (9 hours) - basic full work_ _**
