@@ -36,7 +36,8 @@
 **learning - 80 minutes**
   - learning basically cors - 20 minutes
   - learning basically graph - 20 minutes
-  - learning basically api documentation - 20 minutes
+  - learning basically first api documentation - 20 minutes
+  - learning basically second api documentation - 20 minutes
   - learning basically local storage - 20 minutes
 
 
@@ -75,3 +76,10 @@
 
 -------------------------------------------------------------------------------
 **_ _total net time - 545 minutes (9 hours) - basic full work_ _**
+
+
+work track:
+planning is good, and took an hour.
+graph deployment : I hade a missing 'defer' value in my html script link, and it took me an hour and a half to find. I though it was a problem with making the chart work. deploying it was simple, but finding the problem was hard because of misassumption
+
+now it time to go back to the plan with 1.5 hours delay

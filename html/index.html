@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
   <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/index.js"></script>
-  
+  <script src="/js/index.js" defer></script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +15,25 @@
 </head>
 
 <body>
+
+  <canvas id="myChart"></canvas>
+<div id="parameters">
+  <input type="button" value="confirmed" onclick="confirmed()">
+  <input type="button" value="deaths" onclick="deaths()">
+  <input type="button" value="recovered" onclick="recovered()">
+  <input type="button" value="critical" onclick="critical()">
+  <input type="button" value="todayDeath" onclick="todayDeath()">
+  <input type="button" value="todayConfirmed" onclick="todayConfirmed()">
+</div>
+
+<div id="regions">
+  <input type="button" value="world" onclick="world()" class="btn">
+  <input type="button" value="asia" onclick="getCountriesRegion('Asia')" class="btn">
+  <input type="button" value="europe" onclick="getCountriesRegion('Europe')">
+  <input type="button" value="Africa" onclick="getCountriesRegion('Africa')">
+  <input type="button" value="america" onclick="getCountriesRegion('Americas')">
+  <input type="button" value="Oceania" onclick="getCountriesRegion('Oceania')">
+</div>
 
 </body>
 
