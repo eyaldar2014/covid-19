@@ -16,24 +16,99 @@
 
 <body>
 
-  <canvas id="myChart"></canvas>
-<div id="parameters">
-  <input type="button" value="confirmed" onclick="confirmed()">
-  <input type="button" value="deaths" onclick="deaths()">
-  <input type="button" value="recovered" onclick="recovered()">
-  <input type="button" value="critical" onclick="critical()">
-  <input type="button" value="todayDeath" onclick="todayDeath()">
-  <input type="button" value="todayConfirmed" onclick="todayConfirmed()">
-</div>
+  <!-- loader ------------------------------------------------------------------------------------------------ -->
+  <div id="loader" class="loader">
+    <div class="box">
+      <div class="body ">
+        <div class="details">
+          <div class="r-detail">
+          </div>
+          <div class="m-detail">
+          </div>
+          <div class="mm-detail">
+          </div>
+          <div class="l-detail">
+          </div>
+        </div>
+        <div class="shapes">
+          <div class="b-shape">
+          </div>
+          <div class="t-shape">
+          </div>
+          <div class="rb-shape">
+          </div>
+          <div class="tm-shape">
+          </div>
+          <div class="lm-shape">
+          </div>
+          <div class="rm-shape">
+          </div>
+          <div class="bm-shape">
+          </div>
+          <div class="lt-shape">
+          </div>
+        </div>
+        <div class="sm-details">
+          <div class="r-detail">
+          </div>
+          <div class="m-detail">
+          </div>
+          <div class="mm-detail">
+          </div>
+          <div class="l-detail">
+          </div>
+        </div>
+        <div class="sm-shapes">
+          <div class="b-shape">
+          </div>
+          <div class="t-shape">
+          </div>
+          <div class="rb-shape">
+          </div>
+          <div class="tm-shape">
+          </div>
+          <div class="lm-shape">
+          </div>
+          <div class="rm-shape">
+          </div>
+          <div class="bm-shape">
+          </div>
+          <div class="lt-shape">
+          </div>
+        </div>
+      </div>
+      <div class="centered">
+        <div class="text">
+          COVID-19
+        </div>
+      </div>
+      <div class="message">
+        Please wait...
+      </div>
+    </div>
+  </div>
 
-<div id="regions">
-  <input type="button" value="world" onclick="world()" class="btn">
-  <input type="button" value="asia" onclick="getCountriesRegion('Asia')" class="btn">
-  <input type="button" value="europe" onclick="getCountriesRegion('Europe')">
-  <input type="button" value="Africa" onclick="getCountriesRegion('Africa')">
-  <input type="button" value="america" onclick="getCountriesRegion('Americas')">
-  <input type="button" value="Oceania" onclick="getCountriesRegion('Oceania')">
-</div>
+  <!-- loader ------------------------------------------------------------------------------------------------ -->
+
+
+  <canvas id="myChart"></canvas>
+  <div id="parameters">
+    <input type="button" value="confirmed" onclick="confirmed()">
+    <input type="button" value="deaths" onclick="deaths()">
+    <input type="button" value="recovered" onclick="recovered()">
+    <input type="button" value="critical" onclick="critical()">
+    <input type="button" value="todayDeath" onclick="todayDeath()">
+    <input type="button" value="todayConfirmed" onclick="todayConfirmed()">
+  </div>
+
+  <div id="regions">
+    <input type="button" value="world" onclick="world()" class="btn">
+    <input type="button" value="asia" onclick="getCountriesRegion('Asia')" class="btn">
+    <input type="button" value="europe" onclick="getCountriesRegion('Europe')">
+    <input type="button" value="Africa" onclick="getCountriesRegion('Africa')">
+    <input type="button" value="america" onclick="getCountriesRegion('Americas')">
+    <input type="button" value="Oceania" onclick="getCountriesRegion('Oceania')">
+  </div>
 
 </body>
 

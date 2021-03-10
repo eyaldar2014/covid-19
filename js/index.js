@@ -13,7 +13,7 @@ let chart = new Chart(ctx, {
             label: 'COVID 19',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [1, 1, 1, 1, 1, 1, 1, , 1, 1]
+            data: [1]
         }]
     },
 
@@ -31,11 +31,15 @@ const proxyLink = 'https://api.codetabs.com/v1/proxy/?quest=';
 
 let mainObj = []
 const buttons = document.querySelectorAll("input")
+const loader = document.querySelector("#loader")
 
+// console.log(loader)
 // get API's by country information
 
 async function getCountriesInfo() {
 
+    loader.style.left = 'calc(50vw - 300px);'
+    
     let countries = []
     const result = await fetch(proxyLink + apiOne)
     const datas = await result.json()
@@ -53,6 +57,7 @@ async function getCountriesInfo() {
         countries.push(temp)
     })
 
+    loader.style.left = '-9999px'
     return countries
 }
 
@@ -82,7 +87,6 @@ async function world() {
 // intire world info by countries with region
 async function getCountriesRegion(continent) {
 
-    
     buttons.forEach(btn=>{
         btn.disabled = true;
     })
@@ -91,8 +95,10 @@ async function getCountriesRegion(continent) {
     let countriesByRegion = []
 
     const answer = await getCountriesInfo()
+    loader.style.left = 'calc(50vw - 300px)'
     const result = await fetch(proxyLink + apiTwo)
     const datas = await result.json()
+
 
     datas.map(country => {
         newArray = answer.map(anotherCountry => {
@@ -139,6 +145,7 @@ async function getCountriesRegion(continent) {
         btn.disabled = false;
     })
 
+    loader.style.left = '-9999px'
     return mainObj
 }
 
