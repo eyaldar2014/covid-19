@@ -27,7 +27,8 @@ let chart = new Chart(ctx, {
 
 const apiOne = 'https://corona-api.com/countries'
 const apiTwo = 'https://restcountries.herokuapp.com/api/v1'
-const proxyLink = 'https://api.codetabs.com/v1/proxy/?quest=';
+// const proxyLink = 'https://api.codetabs.com/v1/proxy/?quest=';
+const proxyLink = 'https://api.codetabs.com/v1/proxy/?quest='
 
 let mainObj = []
 const buttons = document.querySelectorAll("input")
